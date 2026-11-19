@@ -1,0 +1,46 @@
+# Réglages du tableau de bord (Streamlit). Aucune clé ni donnée personnelle ici.
+
+[browser]
+gatherUsageStats = false
+
+[server]
+# La page n'est visible que depuis ce PC, pas depuis le reste du réseau.
+address = "127.0.0.1"
+
+[client]
+# Masque le bouton « Deploy », inutile pour une page qui reste sur ce PC.
+toolbarMode = "minimal"
+
+# Couleurs neutres : fond gris clair, cartes blanches, une seule couleur d'accent (bleu ardoise).
+[theme]
+baseRadius = "10px"
+showSidebarBorder = false
+
+[theme.light]
+backgroundColor = "#f3f3f0"
+secondaryBackgroundColor = "#ebeae6"
+textColor = "#141414"
+primaryColor = "#2f5f8a"
+borderColor = "#e3e2dc"
+
+[theme.dark]
+backgroundColor = "#111110"
+secondaryBackgroundColor = "#242422"
+textColor = "#eeede9"
+primaryColor = "#7aa5d4"
+borderColor = "#2e2e2b"
+
+# Barre latérale anthracite, dans les deux thèmes.
+[theme.light.sidebar]
+backgroundColor = "#1d2023"
+secondaryBackgroundColor = "#2a2e32"
+textColor = "#e8e8e4"
+primaryColor = "#9cc0e6"
+borderColor = "#363b40"
+
+[theme.dark.sidebar]
+backgroundColor = "#0b0c0d"
+secondaryBackgroundColor = "#1d2023"
+textColor = "#e8e8e4"
+primaryColor = "#9cc0e6"
+borderColor = "#26292c"

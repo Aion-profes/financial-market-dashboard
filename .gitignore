@@ -1,0 +1,18 @@
+# Fichiers techniques de Python et de l'éditeur.
+__pycache__/
+*.pyc
+.venv/
+.vscode/
+
+# Données de marché téléchargées (Alpaca, Yahoo, BCE) : jamais publiées.
+# Elles se retéléchargent avec les programmes du projet.
+donnees/
+
+# Résultats de simulation et journaux de travail.
+resultats/
+
+# Description de ton propre compte : jamais publiée. L'exemple publié est configuration_exemple.toml.
+configuration_locale.toml
+
+# Personnalisation locale (logo animé) : images personnelles, jamais publiées.
+personnalisation/

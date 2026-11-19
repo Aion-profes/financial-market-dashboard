@@ -1,0 +1,21 @@
+# Configuration d'exemple, publiée avec le projet.
+# Elle ne contient aucune donnée personnelle : ni identifiant de compte, ni relevé, ni solde réel.
+#
+# Pour décrire ton propre compte, copie ce fichier sous le nom « configuration_locale.toml ».
+# Ce second fichier reste sur ta machine : .gitignore l'exclut de la publication.
+
+[compte]
+# Caractéristiques générales du compte. Aucune n'est un identifiant.
+type = "a_renseigner"              # "comptant" ou "marge"
+devises_detenues = []              # par exemple ["EUR"]
+fractions = false                  # true si les fractions d'action sont activées
+conversion = "a_renseigner"        # "automatique" ou "manuelle"
+tarification = "inconnue"          # "fixed", "tiered" ou "inconnue"
+
+[simulation]
+# Capital de l'expérience : ce n'est pas le solde d'un compte réel.
+capital_eur = 1000.0
+usd_depart = 0.0
+# Scénarios de coûts calculés côte à côte, avec les mêmes règles et les mêmes données.
+# Tant que la tarification est inconnue, garder les deux.
+scenarios = ["IBKR_CASH_AUTO_FRACTIONS_FIXED", "IBKR_CASH_AUTO_FRACTIONS_TIERED"]
